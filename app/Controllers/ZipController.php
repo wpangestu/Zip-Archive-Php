@@ -28,10 +28,9 @@ class ZipController extends BaseController
 			
 			$zip->close();
 
-			// var_dump($zip);die();
 
 			$file = FCPATH.$filename;
-			// die($file);
+
 			//Then download the zipped file.
 			header('Content-Description: File Transfer');
             header('Content-Type: application/octet-stream');
